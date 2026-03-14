@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+.main-container {
+    width:80%;
+    padding: 1px;
+    margin:auto;
+    border: 1px solid black;
+}
+
+.inner-box {
+    float:left;
+    width: 23%;
+    height:200px;
+    margin:5px;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    padding-top:20px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+.inner-box i{
+    color: white;
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top:30px;
+    box-sizing: border-box;
+}
+
+.shop-bg{
+    margin:auto;
+    background-color: bisque;
+    padding:20px;
+}
+
+.shop-container{
+    width:90%;
+    margin:auto;
+    display:flex;
+
+}
+
+.shop-item{
+    width:33%;
+    padding:10px;
+}
+
+.shop-item img{
+    width: 100%;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.overlay:hover{
+    opacity: 0.3;
+}
+
+.overlay2{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay2:hover .overlay2-box{
+    top:0%;
+}
+
+.overlay2-box{
+    position: absolute;
+    top:100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 1s;
+}
+
+.overlay-text{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color:white;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-box{
+        width:48%;
+        margin:3px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .inner-box{
+        width:80%;
+        margin:2px;
+        margin-bottom: 50px;
+    }
+}

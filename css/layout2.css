@@ -1,0 +1,115 @@
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : darkgray;
+}
+a:active {
+  color : white;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+}
+
+.main-background{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/mountain.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment:scroll; */
+    padding:1px; /* margin collapse effect 제거 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1px;
+}
+
+.main-title{
+    color:black;
+    font-size:120px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 70px
+}
+
+.main-background>p{
+    color:#812f33;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top:10px;
+    margin-bottom: 1px;
+}
+
+.main-background li{
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 25px;
+    margin-top:10px;
+    display:inline-block;
+    width: 150px;
+    /* background-color: #812f33; */
+    border-radius: 10px;
+    background-image: url(../img/cat.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-background a{
+    text-decoration: None;
+}
+
+.main-button{
+  padding: 15px;
+  /* background-color:aliceblue; */
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  top: 25px;
+  z-index: 11;
+}
+
+.sub-box{
+  text-align: center;
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width:50%;
+  max-width: 800px;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top:-30px;
+  z-index:10;
+}
+
+.text-input{
+  padding:10px;
+  font-size:20px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-left: 10px;
+
+}
+
+@media screen and (max-width: 1200px){
+  .main-title{
+    font-size: 10vw;
+  }
+}
