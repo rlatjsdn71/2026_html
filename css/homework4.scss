@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+@mixin my-alert($bg-color, $txt-color, $content) {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: $bg-color;
+    border: 1px solid $txt-color;
+    padding: 20px;
+
+    p {
+        color: $txt-color;
+        margin-bottom: 0px;
+    }
+
+    p::before {
+        content: $content + " ";
+        color: $txt-color;
+        font-weight: 700;
+    }
+}
+
+@mixin my-col($width) {
+    margin: 0px;
+    height: 100%;
+    float: left;
+    width: $width;
+}
+
+.my-row {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0px;
+    height: 50px;
+}
+
+.test {
+    border: 1px solid black;
+}
+
+.my-row::after {
+    content: '';
+    clear: both;
+}
+
+.my-ul {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px;
+    list-style-type: none;
+    border-top: 1px solid black;
+
+    >li {
+        border: 1px solid black;
+        border-top: none;
+        padding: 10px;
+    }
+
+    >li:hover {
+        background-color: hsl(0, 0%, 87%);
+    }
+
+    >li:active {
+        background-color: #0077ff;
+        color: white;
+    }
+}
+
+.my-col-1 {
+    @include my-col(8.3%)
+}
+
+.my-col-2 {
+    @include my-col(16.6%)
+}
+
+.my-col-3 {
+    @include my-col(25%)
+}
+
+.my-col-4 {
+    @include my-col(33.3%)
+}
+
+.my-col-5 {
+    @include my-col(41.6%)
+}
+
+.my-col-6 {
+    @include my-col(50%)
+}
+
+.my-col-7 {
+    @include my-col(58.3%)
+}
+
+.my-col-8 {
+    @include my-col(66.6%)
+}
+
+.my-col-9 {
+    @include my-col(75%)
+}
+
+.my-col-10 {
+    @include my-col(83.3%)
+}
+
+.my-col-11 {
+    @include my-col(91.6%)
+}
+
+.my-col-12 {
+    @include my-col(100%)
+}
+
+.alert-green {
+    @include my-alert(rgb(90, 189, 90), rgb(0, 53, 0), "Well Done!")
+}
+
+.alert-blue {
+    @include my-alert(#6363eb, #000052, "Heads UP!")
+}
+
+.alert-yellow {
+    @include my-alert(#eeeea4, #3f3f00, "Warning!")
+}

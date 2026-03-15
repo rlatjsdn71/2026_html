@@ -1,0 +1,72 @@
+@use 'reset.scss';
+
+$main-color : #85d4c1;
+$base-size : 16px;
+
+%btn {
+    width: 100px;
+    height: 100px;
+}
+
+%div-box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+.btn-red {
+    @extend %btn;
+    color: red;
+}
+
+.btn-blue {
+    @extend %btn;
+    color: blue;
+}
+
+.box-green {
+    @extend %div-box;
+    background-color: green;
+}
+
+.box-red {
+    @extend %div-box;
+    background-color: red;
+}
+
+.box-blue {
+    @extend %div-box;
+    background-color: blue;
+}
+
+.box {
+    color: $main-color;
+    width: 100%;
+    font-size: $base-size - 3px;
+
+    h4 {
+        font-size: $base-size + 4px;
+    }
+}
+
+@mixin mine($size){
+    font-size: $size;
+    letter-spacing: -1px;
+}
+
+h2 {
+    @include mine(30px);
+}
+
+h3 {
+    @include mine(20px);
+}
+
+h4 {
+    @include mine(10px);
+}

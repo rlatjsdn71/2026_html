@@ -1,0 +1,183 @@
+body {
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.my-row {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0px;
+  height: 50px;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+.my-row::after {
+  content: "";
+  clear: both;
+}
+
+.my-ul {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0px;
+  list-style-type: none;
+  border-top: 1px solid black;
+}
+.my-ul > li {
+  border: 1px solid black;
+  border-top: none;
+  padding: 10px;
+}
+.my-ul > li:hover {
+  background-color: hsl(0, 0%, 87%);
+}
+.my-ul > li:active {
+  background-color: #0077ff;
+  color: white;
+}
+
+.my-col-1 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 8.3%;
+}
+
+.my-col-2 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 16.6%;
+}
+
+.my-col-3 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 25%;
+}
+
+.my-col-4 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 33.3%;
+}
+
+.my-col-5 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 41.6%;
+}
+
+.my-col-6 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+
+.my-col-7 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 58.3%;
+}
+
+.my-col-8 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 66.6%;
+}
+
+.my-col-9 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 75%;
+}
+
+.my-col-10 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 83.3%;
+}
+
+.my-col-11 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 91.6%;
+}
+
+.my-col-12 {
+  margin: 0px;
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+
+.alert-green {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(90, 189, 90);
+  border: 1px solid rgb(0, 53, 0);
+  padding: 20px;
+}
+.alert-green p {
+  color: rgb(0, 53, 0);
+  margin-bottom: 0px;
+}
+.alert-green p::before {
+  content: "Well Done! ";
+  color: rgb(0, 53, 0);
+  font-weight: 700;
+}
+
+.alert-blue {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #6363eb;
+  border: 1px solid #000052;
+  padding: 20px;
+}
+.alert-blue p {
+  color: #000052;
+  margin-bottom: 0px;
+}
+.alert-blue p::before {
+  content: "Heads UP! ";
+  color: #000052;
+  font-weight: 700;
+}
+
+.alert-yellow {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #eeeea4;
+  border: 1px solid #3f3f00;
+  padding: 20px;
+}
+.alert-yellow p {
+  color: #3f3f00;
+  margin-bottom: 0px;
+}
+.alert-yellow p::before {
+  content: "Warning! ";
+  color: #3f3f00;
+  font-weight: 700;
+}/*# sourceMappingURL=homework4.css.map */
