@@ -1,0 +1,169 @@
+body {
+    margin: 0x;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.ani-text {
+    text-align: center;
+    background-color: #eee;
+    margin: 0px;
+}
+
+.ani-text:hover {
+    animation-name: left-right;
+    animation-duration: 2s;
+    transform: translateX(50px);
+}
+
+.side-nav {
+    width: 300px;
+    height: 90vh;
+    margin: 0px;
+    padding: 20px;
+    position: fixed;
+    transform: translateX(-200px);
+    border: 1px solid black;
+    z-index: 100;
+    background-color: white;
+}
+
+.side-nav:hover {
+    animation-name: nav-ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    .nav-title {
+        text-align: center;
+    }
+
+    .nav-content {
+        animation-name: nav-ani-text;
+        animation-duration: 1s;
+    }
+}
+
+.nav-title {
+    text-align: right;
+}
+
+.nav-content {
+    text-align: center;
+}
+
+.x-btn {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 1px;
+
+    border: none;
+    background: none;
+}
+
+.x-btn i {
+    font-size: 75px;
+    transform: rotate(45deg);
+}
+
+.x-btn:hover{
+    animation-name: x-btn-ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.s-btn {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.s-btn:hover {
+    animation-name: s-btn-ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0px);
+    }
+
+    90% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes nav-ani {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes nav-ani-text {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(75px) skewX(-30deg);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes s-btn-ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes x-btn-ani {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(-10deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1.3);
+    }
+}
