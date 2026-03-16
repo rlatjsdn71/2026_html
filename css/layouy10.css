@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.grey {
+    margin-top: 500px;
+    background: lightgrey;
+    height: 2000px;
+    min-width: 800px;
+}
+
+.image {
+    float: right;
+    width: 400px;
+    position: sticky;
+    top: 100px;
+}
+
+.text {
+    float: left;
+    width: 300px
+}
