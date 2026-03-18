@@ -70,7 +70,7 @@ div {
     transform: rotate(45deg);
 }
 
-.x-btn:hover{
+.x-btn:hover {
     animation-name: x-btn-ani;
     animation-duration: 1s;
     animation-fill-mode: forwards;
